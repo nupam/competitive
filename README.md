@@ -1,2 +1,2 @@
-the repository contains algorithmic problems found at various competetive coding wewbsites like spoj, hackerrank.
+the repository contains algorithmic problems found at various competetive coding websites like spoj, hackerrank.
 username: nupam
