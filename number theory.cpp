@@ -49,7 +49,6 @@ LL G(LL p, LL a){   //calculates sum of gp of first term 1 and last term p^a mod
 }
 
 int main(){
-     //lets have a quickie
     std::ios_base::sync_with_stdio(false);
     std::cin.tie(NULL);
     
