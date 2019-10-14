@@ -11,7 +11,7 @@ public:
 
     int size(){return n;}
 
-    int parent(int& n){
+    int parent(const int& n){
         if(par[n]==n) return n;
         else{
             par[n] = parent(par[n]);
