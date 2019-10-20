@@ -15,7 +15,8 @@ std::pair<std::vector<int> , std::vector<int> > BF(std::vector<std::vector<point
     int n = a.size();
     std::vector<int> d(n, INF), p(n, INF);
     d[s] = 0; p[s] = s;
-    for(int i=0; i<n; i++){
+    
+    for(int i=1; i<n; i++){ //relax all paths n-1 times
         for(int j=0; j<n; j++){
             for(int k=0, l = a[j].size(); k<l; k++){
                 int c = a[j][k].f, w = a[j][k].s;
@@ -27,7 +28,7 @@ std::pair<std::vector<int> , std::vector<int> > BF(std::vector<std::vector<point
         }
     }
 
-    for(int j=0; j<n; j++){
+    for(int j=0; j<n; j++){ //part of negetive cycle
         for(int k=0, l = a[j].size(); k<l; k++){
             int c = a[j][k].f, w = a[j][k].s;
             if(d[c] > d[j] + w){
