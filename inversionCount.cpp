@@ -7,7 +7,7 @@ int main(){
 			int* b = a+m;
 			n = n-m;
 			int i1=0, i2=0, i=0, inv=0;
-			int* arr = new int[n];
+			int* arr = new int[n+m];
 			while(i1<m && i2<n){
 				if(a[i1] > b[i2]){
 					inv += m-i1;
