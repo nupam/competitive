@@ -5,6 +5,7 @@
 using std::cout;
 using std::cin;
 
+// memory cheap embedded code to calculate 2 big 10 base numbers, use boost if possible
 class bignumber{
     std::vector<char>n;
     void m10(){
